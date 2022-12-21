@@ -1,0 +1,25 @@
+
+<div style="padding: 50px">
+  <h1 >New user</h1>
+
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label >first name</label>
+      <input type="Text" class="form-control"   placeholder="First Name" formControlName="firstName">
+    </div>
+    <br>
+
+    <div class="form-group">
+      <label >Last name</label>
+      <input type="Text" class="form-control" placeholder="Last Name" formControlName="lastName">
+    </div>
+    <br>
+
+    <div class="form-group">
+      <label >email</label>
+      <input type="email" class="form-control"  placeholder="email" formControlName="email">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary" [disabled]="!userForm.valid">Submit</button>
+  </form>
+</div>

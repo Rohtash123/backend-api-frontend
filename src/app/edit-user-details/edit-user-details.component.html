@@ -1,0 +1,23 @@
+  <div style="width: 40vw; height: 34vh ">
+    <h4 class="d-flex justify-content-center" style="font-size: 40px">Edit User Details</h4>
+    <form [formGroup]="editUserDetails" (ngSubmit)="editUser()">
+      <div class="form-group">
+        <label >first name</label>
+        <input type="Text" class="form-control" placeholder="First Name" formControlName="firstName">
+      </div>
+      <br>
+
+      <div class="form-group">
+        <label >Last name</label>
+        <input type="Text" class="form-control" placeholder="Last Name" formControlName="lastName">
+      </div>
+      <br>
+
+      <div class="form-group">
+        <label >email</label>
+        <input type="email" class="form-control" placeholder="email" formControlName="email">
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary" mat-dialog-close>Submit</button>
+    </form>
+  </div>
