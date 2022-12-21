@@ -16,6 +16,7 @@ export class UserComponent implements OnInit {
   });
   register: any;
 
+  rohtash: any;
 
 
   constructor(private http: HttpClient) { }
